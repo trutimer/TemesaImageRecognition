@@ -1,0 +1,3 @@
+include ':ImageProcessing'
+rootProject.name = 'Temesa Image Processing'
+include ':app', ':lib_support', ':lib_task_api', ':models'
