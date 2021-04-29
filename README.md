@@ -13,11 +13,12 @@ folder.
 
 ## Download
 
-implementation 'com.github.trutimer:TemesaImageRecognition:Tag'
+`implementation 'com.github.trutimer:TemesaImageRecognition:1.0'`
 
 or Maven
-<dependency>
+
+`<dependency>
         <groupId>com.github.trutimer</groupId>
         <artifactId>TemesaImageRecognition</artifactId>
-        <version>Tag</version>
-</dependency>
+        <version>1.0</version>
+</dependency>`
