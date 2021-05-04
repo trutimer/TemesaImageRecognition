@@ -22,17 +22,39 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    aaptOptions {
+        noCompress "tflite"
+    }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
+    lintOptions {
+        abortOnError false
+    }
+    flavorDimensions "tfliteInference"
+    productFlavors {
+        // The TFLite inference is built using the TFLite Support library.
+        support {
+            dimension "tfliteInference"
+        }
+        // Default: The TFLite inference is built using the TFLite Task library (high-level API).
+        taskApi {
+            getIsDefault().set(true)
+            dimension "tfliteInference"
+        }
+    }
 }
 
 dependencies {
+
     implementation 'androidx.appcompat:appcompat:1.2.0'
     implementation 'com.google.android.material:material:1.3.0'
 
-    testImplementation 'junit:junit:4.+'
+    supportImplementation project(":lib_support")
+    taskApiImplementation project(":lib_task_api")
+
+    testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 }
