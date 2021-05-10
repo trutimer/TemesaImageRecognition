@@ -1,4 +1,13 @@
-Saloon
-Wagon
-pick up
-mini bus
+saloon
+wagon
+canter
+coaster
+impreza
+mini_bus
+noah
+pickup
+raum
+rumion
+rush
+sienta
+wish
