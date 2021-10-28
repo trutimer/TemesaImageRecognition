@@ -1,4 +1,4 @@
-bmw_1
+bmw
 canter
 coaster
 impreza
@@ -11,6 +11,7 @@ rumion
 rush
 saloon
 sienta
+tractor
 voltz
 wagon
 wish
