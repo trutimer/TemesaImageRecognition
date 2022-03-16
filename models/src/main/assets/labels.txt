@@ -1,17 +1,17 @@
-bmw
-canter
-coaster
-impreza
-mini_bus
-noah
-pickup
-probox
-raum
-rumion
-rush
-saloon
-sienta
-tractor
-voltz
-wagon
-wish
+0 bmw
+1 canter
+2 coaster
+3 impreza
+4 mini_bus
+5 rumion
+6 raum
+7 probox
+8 pickup
+9 noah
+10 rush
+11 saloon
+12 sienta
+13 tractor
+14 voltz
+15 wagon
+16 wish
